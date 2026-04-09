@@ -4,7 +4,8 @@
 
 int main()
 {
-	int count = 0;
+	// Test input for task 1
+	/*int count = 0;
 	std::cin >> count;
 
 	std::cin.ignore();
@@ -15,7 +16,7 @@ int main()
 		Logger::getInstance().addLog(log);
 	}
 
-	Logger::getInstance().printSortedLogs();
+	Logger::getInstance().printSortedLogs();*/
 
 	return 0;
 }
