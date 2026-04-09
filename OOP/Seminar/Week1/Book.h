@@ -19,12 +19,23 @@ private:
 	char author[MAX_SIZE] = "";
 	unsigned short publicationYear = 0;
 	Genre genre = Genre::Other;
+
+
+	void setTitle(const char*& title);
+	void setAuthor(const char*& author);
+	void setPublicationYear(const int& publicationYear);
+	void setGenre(const Genre& genre);
 public:
-	Book() = delete;
 	Book(const char*& title, const char*& author, const unsigned short& publicationYear, const Genre& genre);
+
 	Book(const Book& other) = delete;
 	Book(Book&& other) = delete;
 	Book& operator=(const Book& other) = delete;
 	Book& operator=(Book&& other) = delete;
+
+	const char* getTitle() const;
+	const char* getAuthor() const;
+	unsigned short getPublicationYear() const;
+	Genre getGenre() const;
 };
 
