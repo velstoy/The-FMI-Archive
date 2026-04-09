@@ -20,13 +20,10 @@ private:
 	unsigned short publicationYear = 0;
 	Genre genre = Genre::Other;
 
-
-	void setTitle(const char*& title);
-	void setAuthor(const char*& author);
-	void setPublicationYear(const int& publicationYear);
-	void setGenre(const Genre& genre);
+	void setTitle(const char* title);
+	void setAuthor(const char* author);
 public:
-	Book(const char*& title, const char*& author, const unsigned short& publicationYear, const Genre& genre);
+	Book(const char* title, const char* author, const unsigned short publicationYear, const Genre genre);
 
 	Book(const Book& other) = delete;
 	Book(Book&& other) = delete;
