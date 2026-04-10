@@ -1,17 +1,17 @@
 #include <iostream>
 #include <string>
-#include "Pair.hpp"
+#include <print>
+#include "Optional.hpp"
 
 int main()
 {
-    Pair<char, int> person('A', 89);
+    Optional<int> bobby(12);
 
-    std::cout << person << std::endl;
+    std::string test = "A";
 
-    Pair<std::string, int> person2;
+    bobby.apply([](int& a) {a++;});
 
-    std::cin >> person2;
-    std::cout << person2;
+    std::println("{}", bobby.getOrDefault(0));
 
     return 0;
 }
